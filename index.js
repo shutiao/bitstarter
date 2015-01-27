@@ -5,7 +5,7 @@ var fs = require('fs')
 app.set('port', (process.env.PORT || 8080))
 app.use(express.static(__dirname + '/public'))
 
-var data = fs.readFileSync('./index.html', "utf-8")
+var data = fs.readFileSync('./bitstarter-hw4.html', "utf-8")
 
 app.get('/', function(request, response) {
   response.send(data)
