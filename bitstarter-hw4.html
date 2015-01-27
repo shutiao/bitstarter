@@ -97,7 +97,19 @@
       .footer a {
         color: #ccccff;
       }
+      div.addthis_toolbox{
+      width:180px;
+      margin: 0 auto;
+      }
     </style>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-59010487-1', 'auto');
+      ga('send', 'pageview');
+    </script>
   </head>
   <body>
 
@@ -192,9 +204,12 @@
 	  <div class="row-fluid">
           <div class="span8 offset2 social">
             <!-- Social buttons are not included in default Bootstrap. -->
+	    <!-- Go to www.addthis.com/dashboard to customize your tools -->
+	    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-54c7a8b97560d26b" async="async"></script>
+	    <div class="addthis_sharing_toolbox"></div>
             <!-- See: http://noizwaves.github.io/bootstrap-social-buttons -->
-            <button class="btn btn-weibo"><i class="icon-weibo"></i> | Weibo</button>
-            <button class="btn btn-facebook"><i class="icon-facebook"></i> | Facebook</button>
+            <!-- button class="btn btn-weibo"><i class="icon-weibo"></i> | Weibo</button  -->
+            <!-- button class="btn btn-facebook"><i class="icon-facebook"></i> | Facebook</button -->
           </div>
 	  </div>
         </div>
